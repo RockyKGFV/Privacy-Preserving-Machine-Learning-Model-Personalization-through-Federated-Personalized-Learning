@@ -425,6 +425,146 @@ Generated visualizations include:
 
 ---
 
+# Federated Learning Experimental Results
+
+This repository contains all experimental result files used for analyzing and evaluating our Federated Learning framework on CIFAR-10 and MNIST datasets.
+
+---
+
+# 1. FedAvg Baseline Results
+
+## `cifar_fedavg.json`
+Stores the global accuracy values for the FedAvg baseline on CIFAR-10.
+
+## `cifar_fedavg_clients.json`
+Stores client-wise accuracy distributions for the FedAvg experiment.
+
+These files help analyze:
+- Client heterogeneity
+- Accuracy variance across clients
+- Fairness among participating clients
+
+---
+
+# 2. Global Logic / Tradeoff Analysis
+
+## `cifar_globallogic.json`
+Stores global accuracy trends used for the global-versus-local tradeoff experiment.
+
+## `cifar_globallogic_clients.json`
+Stores local client accuracies corresponding to the same experiment.
+
+Using these files, we generated the:
+- Global vs Local Tradeoff Plot
+
+This analysis demonstrates:
+- Tradeoff between global generalization and local personalization
+- Effect of client adaptation on overall performance
+
+---
+
+# 3. IID vs Non-IID Experiments
+
+## IID Setting
+
+### `cifar_iid.json`
+Contains IID federated learning accuracy values.
+
+### `cifar_iid_clients.json`
+Contains client-wise IID accuracy distributions.
+
+## Non-IID Setting
+
+### `cifar_noniid.json`
+Contains strongly non-IID experiment results.
+
+### `cifar_noniid_clients.json`
+Stores non-IID client-wise accuracy distributions.
+
+These files were used to compare:
+- Convergence speed
+- Personalization importance
+- Impact of data heterogeneity
+- Stability of federated optimization
+
+---
+
+# 4. Personalized Federated Learning Results
+
+## `cifar_personalized.json`
+Stores personalized federated learning accuracy values across communication rounds.
+
+## `cifar_personalized_clients.json`
+Stores personalized per-client accuracies.
+
+These files are particularly important because the project specifically required:
+- Per-client personalized accuracy analysis
+- Global versus local tradeoff evaluation
+
+The results demonstrate:
+- Benefits of personalization
+- Improved client-specific performance
+- Better adaptation under heterogeneous data settings
+
+---
+
+# 5. Global and Local Accuracy Files
+
+## `global.json`
+Stores global model accuracy trends.
+
+## `local.json`
+Stores average local client accuracy values.
+
+These files were used to generate:
+- Global vs Local Tradeoff Graph
+
+The graph illustrates:
+- Relationship between centralized global learning and local adaptation
+- Performance balance across training rounds
+
+---
+
+# 6. MNIST Experiments
+
+We also conducted comparative experiments on the MNIST dataset.
+
+## `mnist_acc.json`
+Stores baseline MNIST accuracy trends.
+
+## `mnist_iid.json`
+Stores IID MNIST federated learning performance.
+
+## `mnist_noniid.json`
+Stores non-IID MNIST performance values.
+
+## `mnist_personalized.json`
+Stores personalized MNIST learning results.
+
+## `mnist_personalized_clients.json`
+Stores client-wise personalized MNIST accuracies.
+
+These experiments were conducted to:
+- Validate framework generalization
+- Compare behavior across datasets
+- Analyze personalization effects on simpler benchmark datasets
+
+---
+
+# Summary
+
+The provided JSON files collectively support:
+- Baseline FedAvg evaluation
+- Personalized Federated Learning analysis
+- IID vs Non-IID comparison
+- Client heterogeneity studies
+- Global vs Local tradeoff visualization
+- Cross-dataset benchmarking using CIFAR-10 and MNIST
+
+These results form the core experimental evidence for the project evaluation and analysis.
+
+
+
 # Future Improvements
 
 Potential future extensions include:
