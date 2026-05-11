@@ -587,20 +587,3 @@ Potential future extensions include:
 > ICDABI 2023 IEEE Conference
 
 ---
-
-# Acknowledgements
-
-Special thanks to:
-- Flower Federated Learning Framework
-- PyTorch
-- CIFAR-10 dataset contributors
-- MNIST dataset contributors
-- IEEE ICDABI research community
-
----
-
-# License
-
-This project is intended for educational and research purposes.
-
----
